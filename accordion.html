@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="author" content="Toby Willsmer">
+  <title>Accordion</title>
+  <link href="accordion.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="max-width">
+    <h1>Accordion for desktop and mobile</h1>
+  </header>
+  <main class="max-width">
+    <p>An accordion for general full width use &amp; one that only appears on designated mobile breakpoint size.
+    <br/>Just resize your browser to see it in action.
+    <p>You can use one of the three js files included, to either:</p>
+    <ol> 
+      <li>Accordion all sizes <mark>accordion_1.js</mark></li>
+      <li>Accordion on mobile only <mark>accordion_2.js</mark></li>
+      <li>Both together <mark>accordion_3.js</mark></li>
+    </ol>
+    <p>For the purpose of this demo this page loads 'accordion_3.js'.</p>
+    <section>
+      <h3 class="accordion-trigger-desktop">Title-1 &amp; trigger, all sizes</h3>
+      <article class="accordion-content">
+        <p>Tri-tip andouille kevin venison corned beef flank jowl salami. Landjaeger swine bresaola, tenderloin pork meatloaf short ribs sausage doner leberkas t-bone drumstick tongue venison beef ribs. Venison pork loin filet mignon ham hock kevin. Pig bresaola beef venison porchetta corned beef chuck salami ground round cupim
+        </p>
+      </article>
+    </section>
+    <section>
+      <h3 class="accordion-trigger-desktop">Title-2 &amp; trigger, all sizes</h3>
+      <article class="accordion-content">
+        <p>Tri-tip andouille kevin venison corned beef flank jowl salami. Landjaeger swine bresaola, tenderloin pork meatloaf short ribs sausage doner leberkas t-bone drumstick tongue venison beef ribs. Venison pork loin filet mignon ham hock kevin. Pig bresaola beef venison porchetta corned beef chuck salami ground round cupim
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="max-width"><!-- only for demo -->
+      <h2>Footer content</h2>
+      <section class="four-wide">
+        <h4 class="accordion-trigger-mobile">Title-1, trigger, mobile only</h4>
+        <div class="accordion-content">
+          <ul>
+            <li>Some sort of</li>
+            <li>Menu links might</li>
+            <li>go in here</li>
+          </ul>
+        </div>
+      </section>
+      <section class="four-wide">
+        <h4 class="accordion-trigger-mobile">Title-2, trigger, mobile only</h4>
+        <div class="accordion-content">
+          <ul>
+            <li>Some sort of</li>
+            <li>Menu links might</li>
+            <li>go in here</li>
+            <li>and some more</li>
+          </ul>
+        </div>
+      </section>
+      <section class="four-wide">
+        <h4 class="accordion-trigger-mobile">Title-3, trigger, mobile only</h4>
+        <div class="accordion-content">
+          <ul>
+            <li>Any content can go</li>
+            <li>Here I just used</li>
+            <li>Lists as an example</li>
+          </ul>
+        </div>
+      </section>
+      <section class="four-wide">
+        <h4 class="accordion-trigger-mobile">Title-4, trigger, mobile only</h4>
+        <div class="accordion-content">
+          <ul>
+            <li>content here</li>
+            <li>content here</li>
+            <li>content here</li>
+            <li>content here</li>
+            <li>content here</li>  
+          </ul>
+        </div>
+      </section>
+    <div style="clear: both;"></div><!-- for demo purposes only -->
+    </div>
+  </footer>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="accordion_3.js" ></script>
+</body>
+</html>

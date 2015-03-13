@@ -1,0 +1,55 @@
+/****** page demo only ******/
+html         { font-family: arial; line-height: 1.5; }
+body, ul     { padding: 0; margin: 0; }
+ul           { list-style: none; }
+footer       { background: #ccc; }
+.max-width   { max-width: 980px; margin: 0 auto; padding: 0 10px; }
+.four-wide   { width: 25%; float: left; }
+@media screen and (max-width: 700px) {
+  .four-wide { width: 100%; }
+}
+/****** ******/
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 500px; /* set to the lowest height for the footer only */
+  transition: max-height 0.5s ease;
+}
+
+/* handles the animation classes switched by js */
+.accordion-collapsed  { max-height: 0; }
+.accordion-open       { max-height: auto; }
+
+.open,
+.close {
+  position: relative;
+  cursor: pointer;
+}
+
+.open:after,
+.close:after {
+  /* icon font goes here if used */
+  color: #666;
+  font-size: 14px;
+}
+
+.accordion-trigger-mobile.close:after { /* mobile only */
+  content : "close";
+}
+
+.accordion-trigger-mobile.open:after {
+  content : "open";
+}
+
+.accordion-trigger-mobile.open:after, 
+.accordion-trigger-mobile.close:after {
+  float: right;
+}
+
+.accordion-trigger-desktop.close:after { /* all sizes */
+  content : " show less -";
+}
+
+.accordion-trigger-desktop.open:after {
+  content : " show more +";
+}
